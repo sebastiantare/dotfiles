@@ -117,6 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 alias v="nvim"
+alias draw="sudo xboxdrv -c /home/stare/.config/controllerDrawing.conf --detach-kernel-driver"
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
