@@ -116,12 +116,30 @@ if ! shopt -oq posix; then
   fi
 fi
 
+###
+
 alias v="nvim"
 alias draw="sudo xboxdrv -c /home/stare/.config/controllerDrawing.conf --detach-kernel-driver"
+
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools:$HOME/.dotnet/sdk
+export PATH=$PATH:$HOME/Development/quick-lint-js/build/
+
+###
+
+export PATH=$PATH:/usr/local/go/bin
+
+###
+
+export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64'
+export PATH=$PATH:$JAVA_HOME/bin
+
+###
+
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-
+#export STEAM_DIR=$HOME/SteamWine/
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/stare/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -137,3 +155,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+### Music Player
+alias music='ikamp -ui ~/Downloads/ikamp/ui.txt -font ~/Downloads/ikamp/font.ttf'
+
+### Apply Cover iamge to mp3/flac files
+alias coverify='~/.scripts/coverify.sh'

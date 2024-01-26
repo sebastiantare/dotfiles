@@ -1,0 +1,25 @@
+#type       str________v1__v2__v3__v4__flag
+                       0   0   0   0   0
+
+color       bg         32  32  32  125 0
+color       sln        195 195 195 125 0
+color       slb        50  117 167 195 0
+color       fg         225 225 225 255 0
+color       ar         195 195 195 255 0
+color       ft         50  117 167 175 0
+
+window      -          0   0   300 300 0
+font        source.otf 0   0   0   0   0
+image       <albumart> 0   0   300 300 0
+
+blur        -          10  210 280 80  160
+blur        -          10  210 280 80  160
+rect        bg         10  210 280 80  128
+
+title       fg         15  215 270 35  1
+artist      ar         15  250 270 20  1
+regionseek  -          70  276 160 6   0
+rect        sln        70  276 160 6   128
+rect        ar         70  276 160 6   130
+curtime     ar         25  270 280 15  0
+remtime     ar         242 270 280 15  0
